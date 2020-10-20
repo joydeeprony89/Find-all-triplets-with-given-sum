@@ -19,7 +19,7 @@ namespace Find_all_triplets_with_given_sum
             IList<IList<int>> result = new List<IList<int>>();
             for (int i = 0; i < length - 2; i++)
             {
-                if (nums[i] > 0) break; // any no here gthn 0 means no nos are lessar than this no can be present later as it is already sorted
+                if (nums[i] > 0) break; // any number here gthn 0 means no numbers are lessar than this no can be present later as array is already sorted
                 if (i == 0 || nums[i] != nums[i - 1])
                 {
                     int left = i + 1;
